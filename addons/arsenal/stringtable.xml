@@ -757,6 +757,9 @@
             <Czech>Zalogovat chybějící/nedostupné předměty</Czech>
             <Turkish>Kayıp / mevcut olmayan öğeleri günlüğe kaydet</Turkish>
         </Key>
+        <Key ID="STR_ACE_Arsenal_showAllStatsAsTextSetting">
+            <English>Show text for all stats</English>
+        </Key>
         <Key ID="STR_ACE_Arsenal_buttonCurrentMagTooltip">
             <English>Primary magazine</English>
             <Spanish>Cargador principal</Spanish>
@@ -867,6 +870,9 @@
             <Portuguese>Registrar em log itens indisponíveis no RPT</Portuguese>
             <Czech>Zalogovat chybějící/nedostupné předměty do RPT logu</Czech>
             <Turkish>Kayıp / mevcut olmayan öğeleri RPT'nin içine kaydet.</Turkish>
+        </Key>
+        <Key ID="STR_ACE_Arsenal_showAllStatsAsTextTooltip">
+            <English>All stats will show a text value, but they might not be perfectly accurate or have real units.\nNote that weapon range is estimated from max zeroing, and weapon impact text does not consider velocity (but the bar does).</English>
         </Key>
         <Key ID="STR_ACE_Arsenal_CantOpenDisplay">
             <English>Unable to open ACE arsenal</English>

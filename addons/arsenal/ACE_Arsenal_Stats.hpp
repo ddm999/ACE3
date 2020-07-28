@@ -16,6 +16,7 @@ class GVAR(stats) {
         displayName= CSTRING(statPotassium);
         showBar = 1;
         barStatement = "1";
+        textStatement = "1";
         condition = QUOTE((configName (_this select 1)) == 'ACE_Banana');
         tabs[] = {{}, {7}};
     };
@@ -55,6 +56,7 @@ class GVAR(stats) {
         displayName = "$STR_a3_rscdisplayarsenal_stat_range";
         showBar = 1;
         barStatement = QUOTE([ARR_3((_this select 0) select 0, _this select 1, [ARR_3([ARR_2(0, 2500)], [ARR_2(0.01, 1)], false)])] call FUNC(statBarStatement_default));
+        textStatement = QUOTE([ARR_5((_this select 0) select 0, _this select 1, 1, 0, QUOTE("m"))] call FUNC(statTextStatement_default));
         tabs[] = {{0,1,2}, {}};
     };
     class ACE_impact: statBase {
@@ -64,6 +66,7 @@ class GVAR(stats) {
         displayName = "$STR_a3_rscdisplayarsenal_stat_impact";
         showBar = 1;
         barStatement = QUOTE([ARR_3(_this select 0, _this select 1, [ARR_3([ARR_2(0, 3.2)], [ARR_2(-1, 1100)], 2006)])] call FUNC(statBarStatement_impact));
+        textStatement = QUOTE([ARR_5((_this select 0) select 0, _this select 1, 1, 2, QUOTE(" dmg"))] call FUNC(statTextStatement_default));
         tabs[] = {{0,1,2}, {}};
     };
     class ACE_scopeMagnification: statBase {
@@ -89,6 +92,7 @@ class GVAR(stats) {
         displayName = "$STR_a3_rscdisplayarsenal_stat_passthrough";
         showBar = 1;
         barStatement = QUOTE([ARR_3((_this select 0) select 0, _this select 1, [ARR_3([ARR_2(0, 0.63)], [ARR_2(0.01, 1)], false)])] call FUNC(statBarStatement_default));
+        textStatement = QUOTE([ARR_5((_this select 0) select 0, _this select 1, 100, 0, QUOTE(""))] call FUNC(statTextStatement_default));
         tabs[] = {{3,4,6}, {}};
     };
     class ACE_explosiveResistance: statBase {
@@ -98,6 +102,7 @@ class GVAR(stats) {
         displayName = "$STR_a3_rscdisplayarsenal_stat_armor";
         showBar = 1;
         barStatement = QUOTE([ARR_3((_this select 0) select 0, _this select 1, [ARR_3([ARR_2(0, 0.80)], [ARR_2(0.01, 1)], false)])] call FUNC(statBarStatement_default));
+        textStatement = QUOTE([ARR_5((_this select 0) select 0, _this select 1, 100, 0, QUOTE(""))] call FUNC(statTextStatement_default));
         tabs[] = {{3,4,6}, {}};
     };
     class ACE_load: statBase {
@@ -107,6 +112,7 @@ class GVAR(stats) {
         displayName = "$STR_a3_rscdisplayarsenal_stat_load";
         showBar = 1;
         barStatement = QUOTE([ARR_3((_this select 0) select 0, _this select 1, [ARR_3([ARR_2(0, 500)], [ARR_2(0.01, 1)], false)])] call FUNC(statBarStatement_default));
+        textStatement = QUOTE([ARR_5((_this select 0) select 0, _this select 1, 0.1, 2, QUOTE("lb"))] call FUNC(statTextStatement_default));
         tabs[] = {{3,4,5}, {}};
     };
     class ACE_smokeChemTTL: statBase {

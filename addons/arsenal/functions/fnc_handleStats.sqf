@@ -92,7 +92,7 @@ if (!isNil "_itemCfg") then {
                 };
 
                 // Handle text entries
-                if (_showText) then {
+                if (_showText || GVAR(showAllStatsAsText)) then {
                     private _textStatementResult = [_configEntry, _itemCfg] call _textStatement;
 
                     if (_textStatementResult isEqualtype "") then {

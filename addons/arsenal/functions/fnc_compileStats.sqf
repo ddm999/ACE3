@@ -110,10 +110,8 @@ private _configEntries = "(getNumber (_x >> 'scope')) == 2" configClasses (confi
         (_finalArray select 4) set [0, _barStatement];
     };
 
-    if (_showText) then {
-        private _textStatement = compile (getText (_x >> "textStatement"));
-        (_finalArray select 4) set [1, _textStatement];
-    };
+    private _textStatement = compile (getText (_x >> "textStatement"));
+    (_finalArray select 4) set [1, _textStatement];
 
     TRACE_3("stats array", _finalArray, _leftTabsList, _rightTabsList);
 

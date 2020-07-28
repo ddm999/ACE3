@@ -20,6 +20,8 @@ GVAR(modList) = ["", "curator", "kart", "heli", "mark", "expansion", "expansionp
 [QGVAR(allowSharedLoadouts), "CHECKBOX", localize LSTRING(allowSharingSetting), localize LSTRING(settingCategory), true, true] call CBA_Settings_fnc_init;
 [QGVAR(EnableRPTLog), "CHECKBOX", [LSTRING(printToRPTSetting), LSTRING(printToRPTTooltip)], localize LSTRING(settingCategory), false, false] call CBA_Settings_fnc_init;
 
+[QGVAR(showAllStatsAsText), "CHECKBOX", [LSTRING(showAllStatsAsTextSetting), LSTRING(showAllStatsAsTextTooltip)], localize LSTRING(settingCategory), false, false] call CBA_Settings_fnc_init;
+
 [QGVAR(statsToggle), {
     params ["_display", "_showStats"];
 
