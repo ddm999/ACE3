@@ -145,5 +145,11 @@
             <Turkish>Kendi etkileşim menüsün de gözlük camlarını silmeyi göster</Turkish>
             <Russian>Показывать Протереть очки в меню взаимодействия с собой</Russian>
         </Key>
+        <Key ID="STR_ACE_Goggles_SettingUseContactBlindfold_DisplayName">
+            <English>Use the Arma 3 Contact platform update blindfold</English>
+        </Key>
+        <Key ID="STR_ACE_Goggles_SettingUseContactBlindfold_Description">
+            <English>Replace the ACE blindfold texture with one provided by the Contact platform update (which is much harder to see through).\nPlayers already wearing a blindfold when this is changed will need to re-equip it to see the new texture.</English>
+        </Key>
     </Package>
 </Project>

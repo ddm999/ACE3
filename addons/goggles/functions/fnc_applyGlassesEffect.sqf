@@ -43,7 +43,18 @@ if (_postProcessTintAmount != 0 && {GVAR(UsePP)} && GVAR(effects) in [1, 2]) the
     GVAR(PostProcess) ppEffectCommit 30;
 };
 
-private _imagePath = getText (_config >> ["ACE_Overlay", "ACE_OverlayCracked"] select GETBROKEN);
+private _imagePath = "";
+
+if (getNumber (_config >> "ACE_IsBlindfold") == 1) then {
+    // A3 Contact blindfold option
+    if (GVAR(useContactBlindfold)) then {
+        _imagePath = "a3\ui_f_enoch\data\objects\data\optics_blindfold_ca.paa";
+    } else {
+        _imagePath = QPATHTOF(textures\HUD\blindfold_ca.paa);
+    };
+} else {
+    _imagePath = getText (_config >> ["ACE_Overlay", "ACE_OverlayCracked"] select GETBROKEN);
+};
 
 if (_imagePath != "") then {
     GVAR(GogglesLayer) cutRsc ["RscACE_Goggles", "PLAIN", 1, false];

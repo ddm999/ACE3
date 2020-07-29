@@ -25,6 +25,7 @@ class CfgGlasses {
         ace_overlayDirt = "A3\Ui_f\data\igui\rsctitles\HealthTextures\dust_upper_ca.paa";  // (Optional) Dirt overlay image path
         ace_overlayCracked = "mod\textures\HUD\Cracked.paa";  // (Optional) Cracked overlay image path
         ace_dustPath = "mod\textures\fx\dust\dust1.paa";  // (Optional) Dust overlay image path
+        ace_isBlindfold = 0; // (Optional) Use ACE3 blindfold overlays (if using a custom blindfold overlay, don't set this)
     };
 };
 ```
