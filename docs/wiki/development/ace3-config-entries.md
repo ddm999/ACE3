@@ -127,6 +127,7 @@ ace_overlaycracked
 ace_resistance
 ace_protection
 ace_dustpath
+ace_isblindfold
 ```
 
 
