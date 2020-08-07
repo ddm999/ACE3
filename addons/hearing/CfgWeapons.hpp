@@ -91,7 +91,7 @@ class CfgWeapons {
 
     class H_HelmetAggressor_base_F: HelmetBase {
         HEARING_PROTECTION_PELTOR
-    }
+    };
 
     class H_HelmetHBK_base_F;
     class H_HelmetHBK_chops_base_F: H_HelmetHBK_base_F {
