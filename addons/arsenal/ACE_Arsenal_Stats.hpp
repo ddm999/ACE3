@@ -128,4 +128,15 @@ class GVAR(stats) {
         condition = QUOTE(true);
         tabs[] = {{}, {5}};
     };
+    class ACE_recoil: statBase {
+        scope = 2;
+        priority = 2;
+        stats[] = {"recoil"};
+        displayName = "$STR_a3_rscdisplayarsenal_stat_recoil";
+        showBar = 1;
+        showText = 1;
+        barStatement = QUOTE([ARR_3((_this select 0) select 0, _this select 1, [ARR_2([ARR_2(0,0.2)], [ARR_2(0.01, 1)])])] call FUNC(statBarStatement_recoil));
+        textStatement = QUOTE([ARR_2((_this select 0) select 0, _this select 1)] call FUNC(statTextStatement_recoil));
+        tabs[] = {{0,1}, {}};
+    };
 };

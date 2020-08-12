@@ -1332,5 +1332,8 @@
             <Russian>Детонация от удара</Russian>
             <Polish>Detonuj przy uderzeniu</Polish>
         </Key>
+        <Key ID="STR_a3_rscdisplayarsenal_stat_recoil">
+            <English>Recoil</English>
+        </Key>
     </Package>
 </Project>
